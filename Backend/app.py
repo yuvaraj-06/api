@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from model import mine_data
+import uvicorn
 app = FastAPI()
 
  
@@ -8,9 +9,9 @@ app = FastAPI()
 def test(request: Request):
     return {"testing passed"}
 @app.post("/grade")
-def grade(email:str,password:str):
-        res=mine_data(email,password)
+def grade():
+        res=mine_data("yuvarajcoder@gmail.com","yuvaraj1234")
         print(res)
         return {"output":res}
-        
-         
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
