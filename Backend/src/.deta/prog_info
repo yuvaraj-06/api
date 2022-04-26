@@ -1,0 +1,1 @@
+{"id":"a21790be-c773-4a0b-ad3d-d1649c8b1488","space":3263,"runtime":"python3.9","name":"src","path":"u3dvsm","project":"a0exycq6","account":"144798365827","region":"ap-southeast-1","deps":["selenium","fastapi","pydantic","uvicorn","python-multipart","webdriver-manager"],"envs":null,"public":true,"log_level":"debug","cron":""}
